@@ -9,10 +9,8 @@ from .serializers import StudentSerializer
 # Create your views here.
 
 @api_view(['GET', 'POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([AllowAny])
 def get_all_students(request):
-    print(
-        'User ', f'{request.user.id} {request.user.email} {request.user.username}')
     if request.method =='POST':
         serializer = StudentSerializer(data=request.data)
         if serializer.is_valid():
