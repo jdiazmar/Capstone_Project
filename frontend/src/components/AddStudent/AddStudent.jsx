@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const AddStudent = (props) => {
+const AddStudent = ({addNewStudentProp}) => {
 
     const [first_name, setFirst_name] = useState('');
     const [last_name, setLast_name] = useState('');
@@ -16,6 +16,7 @@ const AddStudent = (props) => {
             grade: grade,
             school: school
         };
+        addNewStudentProp(newStudent);
 
     }
 

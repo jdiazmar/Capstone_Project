@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
+import RosterPage from "./pages/RosterPage/RosterPage";
 
 function App() {
   return (
@@ -20,13 +21,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/"
+          path="/roster"
           element={
             <PrivateRoute>
-              <HomePage />
+              <RosterPage />
             </PrivateRoute>
           }
         />
+        <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>

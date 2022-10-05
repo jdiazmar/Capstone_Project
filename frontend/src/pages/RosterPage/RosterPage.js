@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 // Component Imports
 import AddStudent from '../../components/AddStudent/AddStudent';
+import NavBar from '../../components/NavBar/NavBar';
+import DisplayStudents from '../../components/DisplayStudents/DisplayStudents';
 
 const RosterPage = () => {
 
@@ -26,7 +28,12 @@ const RosterPage = () => {
 
     return ( 
         <div>
-            
+            <div>
+                <div>
+                    <DisplayStudents parentEntries={students} />
+                    <AddStudent addNewStudentProp={addStudent} />
+                </div>
+            </div>
         </div>
      );
 }
