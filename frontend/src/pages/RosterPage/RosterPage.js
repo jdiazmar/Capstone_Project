@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 // Component Imports
 import AddStudent from '../../components/AddStudent/AddStudent';
-import NavBar from '../../components/NavBar/NavBar';
+import SearchBar from '../../components/SearchBar/SearchBar';
 import DisplayStudents from '../../components/DisplayStudents/DisplayStudents';
 
 const RosterPage = () => {
@@ -26,10 +26,23 @@ const RosterPage = () => {
         }
     };
 
+    function searchStudent(query){
+        let newArray = []
+        for(let i = 0; i < students.length; i++){
+            if(students[i].first_name.toLowerCase().includes(query) ||
+            students[i].last_name.toLowerCase().includes(query) ||
+            students[i].grade.toLowerCase().includes(query) ||
+            students[i].school.toLowerCase().includes(query)){
+                newArray.push(students[i]);
+            }
+        }setStudents(newArray)
+    }
+
     return ( 
         <div>
             <div>
                 <div>
+                    <SearchBar queryData={searchStudent} />
                     <DisplayStudents parentEntries={students} />
                     <AddStudent addNewStudentProp={addStudent} />
                 </div>

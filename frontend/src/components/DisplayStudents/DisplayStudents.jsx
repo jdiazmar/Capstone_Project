@@ -3,7 +3,7 @@ const DisplayStudents = (props) => {
 
     return ( 
         <div>
-        <table className="table">
+        <table>
             <thead>
                 <tr>
                     <th>First Name</th>
@@ -16,7 +16,7 @@ const DisplayStudents = (props) => {
                 {props.parentEntries.map((entry) => {
                     return (
 
-                        <tr class="font-weight-bold" >
+                        <tr>
                             <td>{entry.first_name}</td>
                             <td>{entry.last_name}</td>
                             <td>{entry.grade}</td>
