@@ -26,6 +26,13 @@ const RosterPage = () => {
         }
     };
 
+    async function deletStudent(entry){
+        let response = await axios.delete(`/students/${entry.id}/`, null);
+        if(response.status === 204){
+            await getAllStudents();
+        }
+    }
+
     function searchStudent(query){
         let newArray = []
         for(let i = 0; i < students.length; i++){
@@ -43,7 +50,7 @@ const RosterPage = () => {
             <div>
                 <div>
                     <SearchBar queryData={searchStudent} />
-                    <DisplayStudents parentEntries={students} />
+                    <DisplayStudents parentEntries={students} deleteStudentProp={deletStudent} />
                     <AddStudent addNewStudentProp={addStudent} />
                 </div>
             </div>

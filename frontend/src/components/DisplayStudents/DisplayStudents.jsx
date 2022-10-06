@@ -21,7 +21,7 @@ const DisplayStudents = (props) => {
                             <td>{entry.last_name}</td>
                             <td>{entry.grade}</td>
                             <td>{entry.school}</td>
-                            {/* <td> <button type="submit" onClick={() => props.deleteSongProperty(entry)} class="btn btn-primary btn-sm" >Delete Song</button> </td> */}
+                            <td> <button type="submit" onClick={() => props.deleteStudentProp(entry)} >Delete</button> </td>
                         </tr>
                     )
                 })}
