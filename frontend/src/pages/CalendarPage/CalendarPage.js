@@ -1,9 +1,10 @@
+import React from "react";
 import EventCalendar from '../../components/EventCalendar/EventCalendar';
 
-const EventsCalendar = (props) => {
+const CalendarPage = () => {
     return ( 
         <EventCalendar />
      );
 }
  
-export default EventsCalendar;
+export default CalendarPage;
