@@ -1,6 +1,7 @@
 // Generic Imports
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { KEY } from '../../localKey';
 // Component Imports
 import AddStudent from '../../components/AddStudent/AddStudent';
 import SearchBar from '../../components/SearchBar/SearchBar';
@@ -15,12 +16,12 @@ const RosterPage = () => {
     }, [addStudent]);
 
     async function getAllStudents(){
-        const response = await axios.get('http://127.0.0.1:8000/students/');
+        const response = await axios.get(`http://127.0.0.1:8000/api/students/`);
         setStudents(response.data);
     };
 
     async function addStudent(newStudent){
-        const response = await axios .post('http://127.0.0.1:8000/students/', newStudent);
+        const response = await axios .post(`http://127.0.0.1:8000/api/students/`, newStudent);
         if(response.status === 201){
             await getAllStudents();
         }
