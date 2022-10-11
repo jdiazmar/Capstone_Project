@@ -8,10 +8,11 @@ const VideoPlayer = (props) => {
 
     return ( 
         <div>
-            <h3>WELCOME</h3>
+            <h3>WELCOME!</h3>
             <ReactPlayer url='https://www.youtube.com/watch?v=jc8MENSC-l8' />
-         </div>
-     );
+        </div>
+
+    );
 }
  
 export default VideoPlayer;
