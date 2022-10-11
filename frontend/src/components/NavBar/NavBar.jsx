@@ -3,7 +3,8 @@ import { useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 import "./NavBar.css";
-import '../../photos/youth-logo.jpg';
+import WebImage from "../WebImage/WebImage";
+
 
 const Navbar = () => {
   const { logoutUser, user } = useContext(AuthContext);
@@ -11,10 +12,13 @@ const Navbar = () => {
   return (
     <div className="navBar">
       <ul>
-        <li className="brand">
-          <Link to="/" >
-            <img src="/photos/youth-logo.jpg" alt="Lakeview Youth Logo" />
-          </Link>
+        <li>
+            <Link to='/' >
+              <WebImage />
+            </Link>
+        </li>
+        <li>
+          <button onClick={() => navigate('/')}>Home</button>
         </li>
         <li>
           <button onClick={() => navigate('/events')}>Events</button>
