@@ -3,7 +3,7 @@ const DisplayStudents = (props) => {
 
     return ( 
         <div>
-        <table>
+        <table >
             <thead>
                 <tr>
                     <th>First Name</th>
