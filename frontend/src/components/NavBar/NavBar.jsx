@@ -31,9 +31,9 @@ const Navbar = () => {
         </li>
         <li>
         {user ? (
-            <button onClick={() => navigate("/login")}>Login</button>
+            <button onClick={() => navigate("/roster")}>Roster</button>
           ) : (
-            <button onClick={() => navigate('/roster')}>Roster</button>
+            <button onClick={() => navigate('/register')}>Register</button>
           )}
         </li>
         <li>
