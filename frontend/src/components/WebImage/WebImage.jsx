@@ -1,6 +1,6 @@
 import pic from '../../images/youth-logo.jpg';
 
 function WebImage(){
-    return <img src={pic} />
+    return <img className='navbar-brand' width='70' height='50' src={pic} />
 }
 export default WebImage
