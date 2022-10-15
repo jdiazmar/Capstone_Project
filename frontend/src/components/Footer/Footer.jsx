@@ -1,9 +1,10 @@
 import "./Footer.css";
+import SocialLogos from "../SocialLogos/SocialLogos";
 
 const Footer = () => {
   return (
     <footer>
-      <p>Copyright © 2022</p>{" "}
+     <SocialLogos />
     </footer>
   );
 };
