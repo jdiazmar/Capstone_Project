@@ -13,7 +13,7 @@ const RosterPage = () => {
 
     useEffect(() => {
         getAllStudents();
-    }, [addStudent]);
+    }, []);
 
     async function getAllStudents(){
         const response = await axios.get(`http://127.0.0.1:8000/api/students/`);
@@ -27,7 +27,7 @@ const RosterPage = () => {
         }
     };
 
-    async function deletStudent(entry){
+    async function deleteStudent(entry){
         let response = await axios.delete(`/students/${entry.id}/`, null);
         if(response.status === 204){
             await getAllStudents();
@@ -51,7 +51,7 @@ const RosterPage = () => {
             <div>
                 <div>
                     <SearchBar queryData={searchStudent} />
-                    <DisplayStudents parentEntries={students} deleteStudentProp={deletStudent} />
+                    <DisplayStudents parentEntries={students} deleteStudentProp={deleteStudent} />
                     <AddStudent addNewStudentProp={addStudent} />
                 </div>
             </div>

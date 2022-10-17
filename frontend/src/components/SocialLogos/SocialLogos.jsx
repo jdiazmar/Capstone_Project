@@ -1,25 +1,23 @@
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import facebook from '../../images/FB-logo.jpg';
-import ig from '../../images/IG-logo.png';
-import tiktok from '../../images/Tiktok-logo.png';
-import youtube from '../../images/Youtube-logo.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 function SocialLogos(){
     return <div>
 <Container>
     <div>
         <a href='https://www.facebook.com/LCYTH' >
-            <img className='navbar-brand' width='70' height='50' src={facebook} />
+            <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a href='https://www.instagram.com/lakeviewyth/' >
-            <img className='navbar-brand' width='70' height='50' src={ig} />
+            <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a href='https://www.tiktok.com/@lakeviewyth?lang=en' >
-            <img className='navbar-brand' width='70' height='50' src={tiktok} />
+            <FontAwesomeIcon icon={faTiktok} />
         </a>
         <a href='https://www.youtube.com/channel/UC6M355s3oLdiqiZBWGX6o7w' >
-            <img className='navbar-brand' width='70' height='50' src={youtube} />
+            <FontAwesomeIcon icon={faYoutube} />
         </a>
     </div>
 </Container>
