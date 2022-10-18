@@ -9,10 +9,10 @@ export default class DemoApp extends React.Component {
         plugins={[ dayGridPlugin ]}
         initialView="dayGridMonth"
         events={[
-            {title: 'SHFT Night', date: '2022-10-05'},
-            {title: 'MDWK Huddle', date: '2022-10-12'},
-            {title: 'MDWK Huddle', date: '2022-10-19'},
-            {title: 'MDWK Huddle', date: '2022-10-26'},
+            {title: 'SHFT Night @7pm', date: '2022-10-05'},
+            {title: 'MDWK Huddle @7pm', date: '2022-10-12'},
+            {title: 'MDWK Huddle @7pm', date: '2022-10-19'},
+            {title: 'MDWK Huddle @7pm', date: '2022-10-26'},
             { title: '6th Grade Boys: Service', date: '2022-10-02' },
             { title: '6th Grade Girls: Early Childhood', date: '2022-10-02' },
             { title: '7/8th Grade Boys: B101', date: '2022-10-02' },

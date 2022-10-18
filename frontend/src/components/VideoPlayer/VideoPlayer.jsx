@@ -4,8 +4,6 @@ import ReactPlayer from 'react-player/youtube';
 
 const VideoPlayer = (props) => {
 
-
-
     return ( 
         // <div>
         //     <h3>WELCOME!</h3>
