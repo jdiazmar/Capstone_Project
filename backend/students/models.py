@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 from django.db import models
 from authentication.models import User
 
@@ -10,3 +11,6 @@ class Student(models.Model):
     last_name = models.CharField(max_length=255)
     grade = models.IntegerField()
     school = models.CharField(max_length=255)
+    age = models.IntegerField()
+    email = models.CharField(max_length=255)
+    phone_number = models.IntegerField()

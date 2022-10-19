@@ -10,6 +10,9 @@ const DisplayStudents = (props) => {
                     <th>Last Name</th>
                     <th>Grade</th>
                     <th>School</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,6 +24,9 @@ const DisplayStudents = (props) => {
                             <td>{entry.last_name}</td>
                             <td>{entry.grade}</td>
                             <td>{entry.school}</td>
+                            <td>{entry.age}</td>
+                            <td>{entry.email}</td>
+                            <td>{entry.phone_number}</td>
                             <td> <button type="submit" onClick={() => props.deleteStudentProp(entry)} >Delete</button> </td>
                         </tr>
                     )
