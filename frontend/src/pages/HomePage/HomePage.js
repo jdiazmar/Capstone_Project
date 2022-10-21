@@ -9,23 +9,24 @@ const HomePage = () => {
 
 
 
-  return (
-    <div className="container">
-      <div>
-        <VideoPlayer />
-      </div>
-      <div className="d-flex flex-column" >
-        <div className="p-2" >
-          <HomePic1 />
-        </div>
-        <div className="p-2" >
-          <HomePic2 />
-        </div>
-        <div className="p-2" >
-          <NextStepsImg />
-        </div>
-      </div>
-    </div>
+  return ( 
+  <div className="container">
+            <div>
+              <VideoPlayer />
+            </div>
+            <div className="d-flex flex-column" >
+              <div className="p-2" >
+                <HomePic1 />
+              </div>
+              <div className="p-2" >
+                <HomePic2 />
+              </div>
+              <div className="p-2" >
+                <NextStepsImg />
+              </div>
+            </div>
+          </div>
+
   );
 };
 
