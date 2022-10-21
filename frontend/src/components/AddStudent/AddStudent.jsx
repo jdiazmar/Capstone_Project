@@ -51,7 +51,7 @@ const AddStudent = ({addNewStudentProp}) => {
                 <label>Phone Number</label>
                 <input type='text' value={phone_number} onChange={(event) => setPhone_Number(event.target.value)}/>
 
-                <button type='submit'>Add</button>
+                <button type='submit' className='btn btn-primary btn-sm' >Add</button>
             </div>
         </form>
      );

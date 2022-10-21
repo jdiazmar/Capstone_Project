@@ -49,7 +49,7 @@ const RosterPage = () => {
     return ( 
         <div>
             <div>
-                <div>
+                <div className='container' >
                     <SearchBar queryData={searchStudent} />
                     <DisplayStudents parentEntries={students} deleteStudentProp={deleteStudent} />
                     <AddStudent addNewStudentProp={addStudent} />

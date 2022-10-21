@@ -3,7 +3,10 @@ import EventCalendar from '../../components/EventCalendar/EventCalendar';
 
 const CalendarPage = () => {
     return ( 
-        <EventCalendar />
+        <div className="container" >
+             <EventCalendar />
+        </div>
+       
      );
 }
  
