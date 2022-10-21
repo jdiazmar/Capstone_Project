@@ -6,16 +6,18 @@ const LeadersPage = () => {
     return ( 
         <div className='container' >
             <div class='row' >
-                <h3>Meet the Youth Pastors!</h3>
-                <div class='col' >
-                    <QImage />
-                    <p>Email:pastorq@lakeviewindy.com</p>
-                    <p>Phone:317-243-9396</p>
-                </div>
-                <div class='col' >
-                    <LeaderImage />
-                    <p>Email:mattiew@lakeviewindy.com</p>
-                    <p>Phone:317-243-9396</p>
+                <div className='container-home' >
+                    <h3 className='welcome'>Meet the Youth Pastors!</h3>
+                    <div class='col' >
+                        <QImage />
+                        <p className='welcome' >Email: pastorq@lakeviewindy.com</p>
+                        <p className='welcome' >Phone: 317-243-9396</p>
+                    </div>
+                    <div class='col' >
+                        <LeaderImage />
+                        <p className='welcome' >Email: mattiew@lakeviewindy.com</p>
+                        <p className='welcome' >Phone: 317-243-9396</p>
+                    </div>
                 </div>
             </div>
         </div>

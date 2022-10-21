@@ -7,11 +7,10 @@ import NextStepsImg from '../../components/NextStepsImg/NextStepsImg';
 
 const HomePage = () => {
 
-
-
   return ( 
   <div className="container">
-            <div>
+      <div className='container-home'>
+      <div>
               <VideoPlayer />
             </div>
             <div className="d-flex flex-column" >
@@ -24,6 +23,7 @@ const HomePage = () => {
               <div className="p-2" >
                 <NextStepsImg />
               </div>
+            </div>
             </div>
           </div>
 

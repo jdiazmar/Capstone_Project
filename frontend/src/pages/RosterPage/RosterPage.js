@@ -1,7 +1,6 @@
 // Generic Imports
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { KEY } from '../../localKey';
 // Component Imports
 import AddStudent from '../../components/AddStudent/AddStudent';
 import SearchBar from '../../components/SearchBar/SearchBar';
@@ -47,15 +46,13 @@ const RosterPage = () => {
     }
 
     return ( 
-        <div>
-            <div>
-                <div className='container' >
-                    <SearchBar queryData={searchStudent} />
-                    <DisplayStudents parentEntries={students} deleteStudentProp={deleteStudent} />
-                    <AddStudent addNewStudentProp={addStudent} />
-                </div>
-            </div>
+    <div className='container'>
+        <div className='container-event'>
+            <SearchBar queryData={searchStudent} />
+            <DisplayStudents parentEntries={students} deleteStudentProp={deleteStudent} />
+            <AddStudent addNewStudentProp={addStudent} />
         </div>
+    </div>
      );
 }
  

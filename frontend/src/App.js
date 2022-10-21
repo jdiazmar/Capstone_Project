@@ -20,7 +20,7 @@ import RosterPage from "./pages/RosterPage/RosterPage";
 
 function App() {
   return (
-    <div>
+    <div className='body' >
       <Navbar />
       <Routes>
         <Route

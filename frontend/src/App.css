@@ -58,5 +58,25 @@ button:hover {
 }
 
 .body {
-  background-color: orange;
+  background-color: #EC5B09;
+}
+
+.container-event {
+  background-color: white;
+}
+
+.container-home {
+  background-color: black;
+}
+
+.welcome {
+  color: white;
+}
+
+.footer {
+  color: white;
+}
+
+.footer-connect {
+  color: black;
 }
