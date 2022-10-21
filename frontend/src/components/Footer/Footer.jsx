@@ -4,7 +4,9 @@ import SocialLogos from "../SocialLogos/SocialLogos";
 const Footer = () => {
   return (
     <footer>
-     <SocialLogos />
+      <div className="row">
+        <SocialLogos />
+      </div>
     </footer>
   );
 };
