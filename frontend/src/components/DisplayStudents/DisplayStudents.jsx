@@ -16,10 +16,9 @@ const DisplayStudents = (props) => {
                 </tr>
             </thead>
             <tbody>
-                {props.parentEntries.map((entry) => {
+                {props.parentEntries.map((entry, index) => {
                     return (
-
-                        <tr className="font-weight-bold" >
+                             <tr className="font-weight-bold" key = {index}  >
                             <td>{entry.first_name}</td>
                             <td>{entry.last_name}</td>
                             <td>{entry.grade}</td>
@@ -28,7 +27,8 @@ const DisplayStudents = (props) => {
                             <td>{entry.email}</td>
                             <td>{entry.phone_number}</td>
                             <td> <button type="submit" className='btn btn-primary btn-sm'  onClick={() => props.deleteStudentProp(entry)} >Delete</button> </td>
-                        </tr>
+                            </tr>
+                   
                     )
                 })}
             </tbody>
