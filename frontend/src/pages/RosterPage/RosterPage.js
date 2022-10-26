@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import useAuth from '../../hooks/useAuth';
-import { Key } from '../../localKey';
+import { KEY, Key } from '../../localKey';
 // Component Imports
 import AddStudent from '../../components/AddStudent/AddStudent';
 import SearchBar from '../../components/SearchBar/SearchBar';
