@@ -33,7 +33,7 @@ const RosterPage = () => {
     //     const response = await axios.post(`http://127.0.0.1:8000/api/students/`, newStudent);
     //     if(response.status === 201){
     //         await getAllStudents();
-    //     }
+    //     }5
     // };
 
 async function addStudent(){
@@ -46,6 +46,7 @@ async function addStudent(){
         email: email,
         phone_number: phone_number
     } 
+    console.log('Post STUDENT', newStudent)
     let response = await axios.post(`http://127.0.0.1:8000/api/students/`, newStudent, {
         headers: {
             Authorization: 'Bearer ' + token

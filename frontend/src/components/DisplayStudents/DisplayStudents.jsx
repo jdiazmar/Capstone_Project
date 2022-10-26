@@ -1,3 +1,4 @@
+import AddStudent from "../AddStudent/AddStudent";
 const DisplayStudents = (props) => {
 
 
