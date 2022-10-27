@@ -5,7 +5,7 @@ import QImage from '../../components/QImage/QImage';
 const LeadersPage = () => {
     return ( 
         <div className='container' >
-            <div class='row' >
+            <div className='row' >
                 <div className='container-home' >
                     <h3 className='welcome'>Meet the Youth Pastors!</h3>
                     <div class='col' >

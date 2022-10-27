@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import useAuth from '../../hooks/useAuth';
-import { KEY, Key } from '../../localKey';
+
 // Component Imports
 import AddStudent from '../../components/AddStudent/AddStudent';
 import SearchBar from '../../components/SearchBar/SearchBar';
@@ -36,7 +36,7 @@ const RosterPage = () => {
     //     }5
     // };
 
-async function addStudent(){
+async function addStudent(entry){
     let newStudent = {
         first_name: first_name,
         last_name: last_name,
@@ -47,7 +47,7 @@ async function addStudent(){
         phone_number: phone_number
     } 
     console.log('Post STUDENT', newStudent)
-    let response = await axios.post(`http://127.0.0.1:8000/api/students/`, newStudent, {
+    let response = await axios.post(`http://127.0.0.1:8000/api/students/add/`, newStudent, {
         headers: {
             Authorization: 'Bearer ' + token
         }
@@ -94,7 +94,7 @@ async function addStudent(){
         <div className='container-event'>
             <SearchBar queryData={searchStudent} />
             <DisplayStudents parentEntries={students} deleteStudentProp={deleteStudent} />
-            <AddStudent addNewStudentProp={addStudent} />
+            <AddStudent addNewStudentProp={addStudent}  first_name={first_name} last_name={last_name} grade={grade} school={school} age={age} email={email} phone_number={phone_number} />
         </div>
     </div>
      );
