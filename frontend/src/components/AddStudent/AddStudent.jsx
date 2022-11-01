@@ -12,7 +12,7 @@ const AddStudent = ({addNewStudentProp}) => {
     const [phone_number, setPhone_Number] = useState('');
 
     function handleSubmit(event){
-        event.prevenDefault();
+        event.preventDefault();
         let newStudent = {
             first_name: first_name,
             last_name: last_name,

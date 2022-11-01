@@ -46,13 +46,13 @@ async function addStudent(entry){
         email: email,
         phone_number: phone_number
     } 
-    console.log('Post STUDENT', newStudent)
-    let response = await axios.post(`http://127.0.0.1:8000/api/students/add/`, newStudent, {
+    console.log('Post STUDENT', entry)
+    let response = await axios.post(`http://127.0.0.1:8000/api/students/add/`, entry, {
         headers: {
             Authorization: 'Bearer ' + token
         }
     });
-    setStudents(response.data);
+ 
     getAllStudents();
 }
 
