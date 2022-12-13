@@ -15,7 +15,9 @@ const HomePage = () => {
             </div>
             <div className="d-flex flex-column" >
               <div className="p-2" >
-                <HomePic1 />
+                  <a href='https://www.eventbrite.com/e/shft-student-conference-2023-tickets-466341318437' >
+                    <HomePic1 />
+                  </a>
               </div>
               <div className="p-2" >
                 <HomePic2 />
